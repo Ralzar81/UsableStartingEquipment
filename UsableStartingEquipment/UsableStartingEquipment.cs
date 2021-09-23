@@ -382,7 +382,7 @@ public class UsableStartingEquipment : MonoBehaviour
             }
         }
 
-        if (forbiddenChain && (armorMat == ArmorMaterialTypes.Chain || armorMat == ArmorMaterialTypes.Chain) )
+        if (forbiddenChain && (armorMat == ArmorMaterialTypes.Chain || armorMat == ArmorMaterialTypes.Chain2) )
         {
                 armorMat = ArmorMaterialTypes.Leather;
         }
@@ -465,7 +465,7 @@ public class UsableStartingEquipment : MonoBehaviour
                     if (!playerEntity.Career.IsShieldForbidden(DFCareer.ShieldFlags.KiteShield))
                         templateIndex = 111;
                     else if (!playerEntity.Career.IsShieldForbidden(DFCareer.ShieldFlags.RoundShield))
-                        templateIndex = 1110;
+                        templateIndex = 110;
                     else if (!playerEntity.Career.IsShieldForbidden(DFCareer.ShieldFlags.Buckler))
                         templateIndex = 109;
                     break;
